@@ -120,10 +120,10 @@
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
             <Export-Package>*</Export-Package>
             <Require-Bundle>org.lucee.httpcomponents.httpcore;bundle-version=4.4.1,org.lucee.httpcomponents.httpclient;bundle-version=4.5.0,org.lucee.commons.logging;bundle-version=1.2.0,org.apache.commons.codec;bundle-version=1.9.0,jackson-core-asl;bundle-version=1.9.13,jackson-mapper-asl;bundle-version=1.9.13,log4j;bundle-version=1.2.17,java.xmlbuilder;bundle-version=1.1.0,javax.mail.activation;bundle-version=1.4.7.0002L,mx4j.lite;bundle-version=3.0.2,bcprov;bundle-version=1.52</Require-Bundle>
-            <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <Import-Package>!javax.accessibility,!javax.swing.plaf.metal,!javax.swing.text.html,!com.jamesmurty.utils,!contribs.com.centerkey.utils,!org.codehaus.jackson,!org.codehaus.jackson.map,*</Import-Package>
-            <DynamicImport-Package>javax.accessibility,javax.swing.plaf.metal,javax.swing.text.html,com.jamesmurty.utils,contribs.com.centerkey.utils,org.codehaus.jackson,org.codehaus.jackson.map</DynamicImport-Package>
-          <!-- <Fragment-Host></Fragment-Host> -->
+            
+            <Import-Package>!javax.accessibility</Import-Package>
+     <DynamicImport-Package>javax.accessibility</DynamicImport-Package>
+       
           </instructions>
         </configuration>
         <extensions>true</extensions>
