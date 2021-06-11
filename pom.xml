@@ -2,11 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>jets3t</artifactId>
-  <version>0.9.4.0007L</version>
-  <name>JetS3t</name>
+  <version>0.9.4.0008L</version>
+  <name>jets3t</name>
   <packaging>bundle</packaging>
 
-  <description>OSGi Version of JetS3t</description>
+  <description>OSGi Version of jets3t</description>
   <url>http://maven.lucee.org/jets3t/</url>
 
   <!-- same license as the original jar -->
@@ -118,8 +118,8 @@
             <Bundle-Name>org.lucee.jets3t</Bundle-Name>
             <Bundle-SymbolicName>org.lucee.jets3t</Bundle-SymbolicName>
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
-            <Export-Package>*</Export-Package>
-            <Require-Bundle>org.lucee.httpcomponents.httpcore;bundle-version=4.4.12,org.lucee.httpcomponents.httpclient;bundle-version=4.5.10,org.lucee.commons.logging,org.apache.commons.codec;bundle-version=1.9.0,jackson-core-asl;bundle-version=1.9.13,jackson-mapper-asl;bundle-version=1.9.13,log4j;bundle-version=1.2.17,java.xmlbuilder;bundle-version=1.1.0,javax.mail.activation;bundle-version=1.6.2.0000L,org.lucee.bouncycastle.bcprov;bundle-version=1.52.0</Require-Bundle>
+            <Export-Package>*,META-INF.services.*</Export-Package>
+            <Require-Bundle>org.lucee.httpcomponents.httpcore;bundle-version=4.4.12,org.lucee.httpcomponents.httpclient;bundle-version=4.5.10,org.lucee.commons.logging,org.apache.commons.codec;bundle-version=1.9.0,jackson-core-asl;bundle-version=1.9.13,jackson-mapper-asl;bundle-version=1.9.13,log4j;bundle-version=1.2.17,java.xmlbuilder;bundle-version=1.1.0.1,javax.mail.activation;bundle-version=1.6.2.0000L,org.lucee.bouncycastle.bcprov;bundle-version=1.52.0</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
             <Import-Package>!javax.accessibility,!javax.swing.plaf.metal,!javax.swing.text.html,!com.jamesmurty.utils,!contribs.com.centerkey.utils,!org.codehaus.jackson,!org.codehaus.jackson.map,*</Import-Package>
             <DynamicImport-Package>javax.accessibility,javax.swing.plaf.metal,javax.swing.text.html,com.jamesmurty.utils,contribs.com.centerkey.utils,org.codehaus.jackson,org.codehaus.jackson.map</DynamicImport-Package>
@@ -139,7 +139,7 @@
     <url>https://github.com/lucee/osgi-bundle-jets3t</url>
     <connection>scm:git:git://github.com/lucee/osgi-bundle-jets3t.git</connection>
     <developerConnection>scm:git:git@github.com:lucee/osgi-bundle-jets3t.git</developerConnection>
-    <tag>JetS3t OSGi library</tag>
+    <tag>jets3t OSGi library</tag>
   </scm>
 
   <distributionManagement>
