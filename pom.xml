@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>jets3t</artifactId>
-  <version>0.9.7.0001L</version>
+  <version>0.9.4.0014L</version>
   <name>jets3t</name>
   <packaging>bundle</packaging>
 
@@ -93,9 +93,9 @@
              <configuration>
                <artifactItems>
                  <artifactItem>
-                   <groupId>org.jets3t</groupId>
+                   <groupId>net.java.dev.jets3t</groupId>
                     <artifactId>jets3t</artifactId>
-                    <version>0.9.7</version>
+                    <version>0.9.4</version>
                    <type>jar</type>
                    <overWrite>false</overWrite>
                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
@@ -119,10 +119,10 @@
             <Bundle-SymbolicName>org.lucee.jets3t</Bundle-SymbolicName>
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
             <Export-Package>*,META-INF.services.*</Export-Package>
-            <Require-Bundle>java.xmlbuilder;bundle-version=1.1.0.0002L,org.lucee.httpcomponents.httpclient;bundle-version=4.5.10,org.lucee.httpcomponents.httpcore;bundle-version=4.4.12,com.fasterxml.jackson.core.jackson-core;bundle-version=2.9.7,com.fasterxml.jackson.core.jackson-databind;bundle-version=2.9.7,com.fasterxml.jackson.core.jackson-annotations;bundle-version=2.9.0,org.apache.commons.commons-codec;bundle-version=1.15.0,bcprov;bundle-version=1.62,slf4j.api;bundle-version=1.7.30</Require-Bundle>
+            <Require-Bundle>org.lucee.httpcomponents.httpcore;bundle-version=4.4.12,org.lucee.httpcomponents.httpclient;bundle-version=4.5.10,org.lucee.commons.logging,org.apache.commons.codec;bundle-version=1.9.0,jackson-core-asl;bundle-version=1.9.13,jackson-mapper-asl;bundle-version=1.9.13,java.xmlbuilder;bundle-version=1.1.0.0002L,javax.mail.activation;bundle-version=1.6.2.0000L,org.lucee.bouncycastle.bcprov;bundle-version=1.52.0</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <Import-Package>!javax.accessibility,!javax.swing.plaf.metal,!javax.swing.text.html,!com.jamesmurty.utils,!contribs.com.centerkey.utils,!org.codehaus.jackson,!org.codehaus.jackson.map,*</Import-Package>
-            <DynamicImport-Package>javax.accessibility,javax.swing.plaf.metal,javax.swing.text.html,com.jamesmurty.utils,contribs.com.centerkey.utils,org.codehaus.jackson,org.codehaus.jackson.map</DynamicImport-Package>
+            <Import-Package>!org.apache.log4j,!javax.accessibility,!javax.swing.plaf.metal,!javax.swing.text.html,!com.jamesmurty.utils,!contribs.com.centerkey.utils,!org.codehaus.jackson,!org.codehaus.jackson.map,!com.apple.eio,!com.sun.java.browser.net,!sun.plugin.protocol,*</Import-Package>
+            <DynamicImport-Package>org.apache.log4j,javax.accessibility,javax.swing.plaf.metal,javax.swing.text.html,com.jamesmurty.utils,contribs.com.centerkey.utils,org.codehaus.jackson,org.codehaus.jackson.map,com.apple.eio,com.sun.java.browser.net,sun.plugin.protocol</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
